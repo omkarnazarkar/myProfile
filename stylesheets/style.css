@@ -1,0 +1,57 @@
+
+.vertical-slider-nav {
+	position: fixed;
+    height: 258px;
+    right: 4%;
+    top: 0px;
+    bottom: 0px;
+    margin: auto; 
+    padding: 0px;
+    z-index: 3;
+}
+.text-logo {
+	position: fixed;
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+}
+.text-logo h1 {
+	color: #fff;
+    font-weight: 600;
+    letter-spacing: 6.5px;
+}
+ul li {
+	display: flex;
+    justify-content: center;
+}
+ul li a {
+	padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+ul li a:hover {
+	color: rgba(4, 154, 191, 1);
+}
+ul li a.active {
+    font-size: 30px;
+    box-shadow: 0 2px 11px 3px lightgrey;
+    color: rgba(4, 154, 191, 1);
+}
+.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+#vsliderboxes {
+	position: relative;
+}
+#vsliderboxs-inner > div {
+	position: absolute;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+	height: calc(100vh + 100px);
+	width: 100vw;
+}

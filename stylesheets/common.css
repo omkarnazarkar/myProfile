@@ -1,0 +1,24 @@
+html, body{
+    /*font: 12px "Helvetica Neue",Arial,Helvetica,sans-serif;*/
+    color: #333;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+h1 {
+	margin: 0px;
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.poRel {position: relative;}
+a {text-decoration: none;}
+.fL {float: left}
+.fB {font-weight: bold;}
+.fw500 {font-weight: 500;}
+.f14 {font-size: 14px;}
+.f18 {font-size: 18px;}
+.f20 {font-size: 20px;}
+.colorFFF {color: #fff;}
+.clear {clear:both;}

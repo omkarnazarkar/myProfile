@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="icon" href="images/favicon.ico" type="image/png" sizes="16x16"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	
+	<script type="text/javascript" src="javascripts/lib/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div class="page-header">
+  <h1>Share Dialog</h1>
+</div>
+
+<p>Click the button below to trigger a Share Dialog</p>
+
+<button id="shareBtn" class="btn btn-success clearfix">Share</button>
+
+<p style="margin-top: 50px">
+  <hr />
+  <a class="btn btn-small"  href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Share Dialog Documentation</a>
+</p>
+
+<script type="text/javascript" src="javascripts/lib/mustache.js"></script>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script type="text/javascript" src="javascripts/common.js"></script>
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '184484190795',
+        xfbml      : true,
+        version    : 'v2.5'
+  //         "appID": "184484190795",
+  // "frictionlessRequests": true,
+  // "init": true,
+  // "level": "debug",
+  // "signedRequest": null,
+  // "status": true,
+  // "viewMode": "website",
+  // "autoRun": false
+      });
+    };
+
+</script>
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  debugger;
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'https://developers.facebook.com/docs/',
+  }, function(response){});
+}
+</script>
+<script>
+        // Init helper
+    // $(function(){
+    //     var landingHomeObj = new LandingHomePage({});
+    // });
+</script>
+</body>
+</html>
